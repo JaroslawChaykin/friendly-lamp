@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="css/style.min.css">
+    <title>gulp</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        .header {
+            width: 100%;
+            position: fixed;
+            background: #363636;
+        }
+        .container {
+            max-width: 1170px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .bg img {
+            width: 100%;
+        }
+        .header ul {
+            display: flex;
+        }
+        .header ul li {
+            list-style: none;
+            padding: 26px 15px;
+            cursor: pointer;
+            font-family: sans-serif;
+        }
+        .header ul li {
+            color: white;
+            text-decoration: none;
+            padding: 26px 15px;
+        }
+        .header ul li:hover {
+            background: white;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+<!--    @@include('_header.html')-->
+    <div class="header">
+        <div class="container">
+            <div class="header__social">
+                <img src="img/socsety.png" alt="">
+            </div>
+            <img src="img/logo.png" alt="" class="header__logo">
+            <div class="header-menu">
+                <ul>
+                    <li onclick="ab()">
+                        Главная
+                    </li>
+                    <li onclick="bc()">
+                        Лаборатория
+                    </li>
+                    <li onclick="cd()">
+                        Препарат
+                    </li>
+                    <li onclick="de()">
+                        Сотрудники
+                    </li>
+                    <li onclick="ef()">
+                        Контакты
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="bg">
+    </div>
+
+    <script>
+        let abc = document.querySelector('.bg');
+        function ab() {
+            abc.innerHTML = '<img src="img/Desktop%20-%203.jpg" alt="">'
+        }
+        function bc() {
+            abc.innerHTML = '<img src="img/Desktop%20-%204.jpg" alt="">'
+        }
+        function cd() {
+            abc.innerHTML = '<img src="img/Desktop%20-%205.jpg" alt="">'
+        }
+        function de() {
+            abc.innerHTML = '<img src="img/Desktop%20-%206.jpg" alt="">'
+        }
+        function ef() {
+            abc.innerHTML = '<img src="img/Desktop%20-%207.jpg" alt="">'
+        }
+        console.log(ab())
+    </script>
+</body>
+</html>
